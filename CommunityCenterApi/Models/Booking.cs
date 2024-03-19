@@ -5,7 +5,6 @@ namespace CommunityCenterApi.Models
     public class Booking
     {
         public int BookingId { get; set; }
-        public DateTime Date { get; set; }
         public string Status { get; set; }
         public double Price { get; set; }
 

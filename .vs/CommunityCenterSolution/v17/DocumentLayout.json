@@ -1,0 +1,198 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|c:\\users\\dana\\documents\\github\\web_development\\communitycenterapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|solutionrelative:communitycenterapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|c:\\users\\dana\\documents\\github\\web_development\\communitycenterapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|solutionrelative:communitycenterapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|c:\\users\\dana\\documents\\github\\web_development\\communitycenterapi\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|solutionrelative:communitycenterapi\\services\\implementations\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|c:\\users\\dana\\documents\\github\\web_development\\communitycenterapi\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|solutionrelative:communitycenterapi\\services\\interfaces\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|c:\\users\\dana\\documents\\github\\web_development\\communitycenterapi\\services\\implementations\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|solutionrelative:communitycenterapi\\services\\implementations\\bookingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|c:\\users\\dana\\documents\\github\\web_development\\communitycenterapi\\bookingpricing\\bookingpricingstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|solutionrelative:communitycenterapi\\bookingpricing\\bookingpricingstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|c:\\users\\dana\\documents\\github\\web_development\\communitycenterapi\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|solutionrelative:communitycenterapi\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|c:\\users\\dana\\documents\\github\\web_development\\communitycenterapi\\log\\filelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|solutionrelative:communitycenterapi\\log\\filelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|c:\\users\\dana\\documents\\github\\web_development\\communitycenterapi\\services\\implementations\\activityserviceloggingdecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|solutionrelative:communitycenterapi\\services\\implementations\\activityserviceloggingdecorator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|c:\\users\\dana\\documents\\github\\web_development\\communitycenterapi\\services\\implementations\\activityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|solutionrelative:communitycenterapi\\services\\implementations\\activityservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|c:\\users\\dana\\documents\\github\\web_development\\communitycenterapi\\log\\fileloggerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{199D5DE4-65F6-4DE3-A1D1-C22CB3DC9716}|CommunityCenterApi\\CommunityCenterApi.csproj|solutionrelative:communitycenterapi\\log\\fileloggerfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "CommunityCenterApi\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "CommunityCenterApi\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:01:45.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Services\\Interfaces\\IUserService.cs",
+              "RelativeDocumentMoniker": "CommunityCenterApi\\Services\\Interfaces\\IUserService.cs",
+              "ToolTip": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Services\\Interfaces\\IUserService.cs",
+              "RelativeToolTip": "CommunityCenterApi\\Services\\Interfaces\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:00:09.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BookingService.cs",
+              "DocumentMoniker": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Services\\Implementations\\BookingService.cs",
+              "RelativeDocumentMoniker": "CommunityCenterApi\\Services\\Implementations\\BookingService.cs",
+              "ToolTip": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Services\\Implementations\\BookingService.cs",
+              "RelativeToolTip": "CommunityCenterApi\\Services\\Implementations\\BookingService.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAqwGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:54:53.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookingPricingStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\BookingPricing\\BookingPricingStrategy.cs",
+              "RelativeDocumentMoniker": "CommunityCenterApi\\BookingPricing\\BookingPricingStrategy.cs",
+              "ToolTip": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\BookingPricing\\BookingPricingStrategy.cs",
+              "RelativeToolTip": "CommunityCenterApi\\BookingPricing\\BookingPricingStrategy.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAASwBEAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:54:13.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "CommunityCenterApi\\Controllers\\BookingsController.cs",
+              "ToolTip": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "CommunityCenterApi\\Controllers\\BookingsController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAswFMAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:53:55.872Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ActivityService.cs",
+              "DocumentMoniker": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Services\\Implementations\\ActivityService.cs",
+              "RelativeDocumentMoniker": "CommunityCenterApi\\Services\\Implementations\\ActivityService.cs",
+              "ToolTip": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Services\\Implementations\\ActivityService.cs",
+              "RelativeToolTip": "CommunityCenterApi\\Services\\Implementations\\ActivityService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:45:09.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\appsettings.json",
+              "RelativeDocumentMoniker": "CommunityCenterApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\appsettings.json",
+              "RelativeToolTip": "CommunityCenterApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-12T12:31:42.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Services\\Implementations\\UserService.cs",
+              "RelativeDocumentMoniker": "CommunityCenterApi\\Services\\Implementations\\UserService.cs",
+              "ToolTip": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Services\\Implementations\\UserService.cs",
+              "RelativeToolTip": "CommunityCenterApi\\Services\\Implementations\\UserService.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T13:00:39.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ActivityServiceLoggingDecorator.cs",
+              "DocumentMoniker": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Services\\Implementations\\ActivityServiceLoggingDecorator.cs",
+              "RelativeDocumentMoniker": "CommunityCenterApi\\Services\\Implementations\\ActivityServiceLoggingDecorator.cs",
+              "ToolTip": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Services\\Implementations\\ActivityServiceLoggingDecorator.cs",
+              "RelativeToolTip": "CommunityCenterApi\\Services\\Implementations\\ActivityServiceLoggingDecorator.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwAYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:37:02.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FileLogger.cs",
+              "DocumentMoniker": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Log\\FileLogger.cs",
+              "RelativeDocumentMoniker": "CommunityCenterApi\\Log\\FileLogger.cs",
+              "ToolTip": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Log\\FileLogger.cs",
+              "RelativeToolTip": "CommunityCenterApi\\Log\\FileLogger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:34:27.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FileLoggerFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Log\\FileLoggerFactory.cs",
+              "RelativeDocumentMoniker": "CommunityCenterApi\\Log\\FileLoggerFactory.cs",
+              "ToolTip": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\Log\\FileLoggerFactory.cs",
+              "RelativeToolTip": "CommunityCenterApi\\Log\\FileLoggerFactory.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-12T12:33:23.156Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

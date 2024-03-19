@@ -16,6 +16,11 @@ namespace CommunityCenterApi.Services.Implementations
 
         public async Task<Activity> CreateActivityAsync(Activity newActivity)
         {
+            if (newActivity.Date == default(DateTime))
+            {
+                newActivity.Date = DateTime.Now;
+            }
+
             _context.Activities.Add(newActivity);
             await _context.SaveChangesAsync();
             return newActivity;
@@ -41,6 +46,7 @@ namespace CommunityCenterApi.Services.Implementations
 
             existingActivity.ActivityName = updatedActivity.ActivityName;
             existingActivity.Description = updatedActivity.Description;
+            existingActivity.Date = updatedActivity.Date;
             // Update other properties as needed
 
             _context.Entry(existingActivity).State = EntityState.Modified;

@@ -4846,24 +4846,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alex.moskalenko\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Dana\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alex.moskalenko\\Git\\CommunityCenterSolution\\CommunityCenterApi\\CommunityCenterApi.csproj",
+      "projectUniqueName": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\CommunityCenterApi.csproj",
       "projectName": "CommunityCenterApi",
-      "projectPath": "C:\\Users\\alex.moskalenko\\Git\\CommunityCenterSolution\\CommunityCenterApi\\CommunityCenterApi.csproj",
-      "packagesPath": "C:\\Users\\alex.moskalenko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alex.moskalenko\\Git\\CommunityCenterSolution\\CommunityCenterApi\\obj\\",
+      "projectPath": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\CommunityCenterApi.csproj",
+      "packagesPath": "C:\\Users\\Dana\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\alex.moskalenko\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Dana\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

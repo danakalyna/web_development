@@ -1,0 +1,17 @@
+<form [formGroup]="activityForm" (ngSubmit)="createActivity()">
+    <div>
+      <label for="name">Name:</label>
+      <input formControlName="name" id="name" required>
+    </div>
+    <div>
+      <label for="description">Description:</label>
+      <textarea formControlName="description" id="description"></textarea>
+    </div>
+    <div>
+      <label for="startDate">Start Date:</label>
+      <input formControlName="startDate" id="startDate" type="date" required>
+    </div>
+    <!-- ...other inputs as needed -->
+    <button type="submit" [disabled]="!activityForm.valid">Create Activity</button>
+  </form>
+  

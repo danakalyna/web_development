@@ -1,10 +1,8 @@
 ﻿using CommunityCenterApi.Models;
 using CommunityCenterApi.DB;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using CommunityCenterApi.Services.Interfaces;
+using CommunityCenterApi.Helpers;
 
 namespace CommunityCenterApi.Services.Implementations
 {
@@ -19,6 +17,7 @@ namespace CommunityCenterApi.Services.Implementations
 
         public async Task<User> CreateUserAsync(User newUser)
         {
+            newUser.PasswordHash = PasswordHasher.HashPassword(newUser.PasswordHash);
             _context.Users.Add(newUser);
             await _context.SaveChangesAsync();
             return newUser;
@@ -66,6 +65,32 @@ namespace CommunityCenterApi.Services.Implementations
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
             return true;
+        }
+        public async Task<User> Authenticate(string username, string password)
+        {
+            var user = await _context.Users
+                                             .AsNoTracking()
+                                             .SingleOrDefaultAsync(u => u.Email == username);
+
+            if (user == null)
+            {
+                return null;
+            }
+
+            // Assume we have a method that gets the hashed password from the database.
+            // For example, 'GetUserHashedPassword' would retrieve the stored hash for the given user.
+            var hashedPassword = user.PasswordHash;
+
+            // Now we use the PasswordHasher helper to check the provided password against the stored hash.
+            var verificationResult = PasswordHasher.CheckPassword(hashedPassword, password);
+
+            if (!verificationResult.Verified)
+            {
+                return null;
+            }
+
+            // The 'Verified' property tells us if the password was correct.
+            return user;
         }
     }
 }

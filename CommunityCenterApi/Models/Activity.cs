@@ -10,6 +10,8 @@
         // Navigation property to User
         public Guid UserId { get; set; }
         public User? User { get; set; }
+
+        public DateTime Date { get; set; }
         public virtual ICollection<Booking>? Bookings { get; set; }
     }
 }

@@ -1,0 +1,27 @@
+/* styles.scss or your component's specific stylesheet */
+.navbar {
+    background: #333;
+    color: white;
+    padding: 1rem;
+  
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: left;
+      margin: 0;
+      padding: 0;
+  
+      li {
+        margin-right: 1rem;
+  
+        a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  

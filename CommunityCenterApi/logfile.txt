@@ -1,2 +1,40 @@
 3/11/2024 8:32:33 PM: Retrieving all activities.
 3/11/2024 8:32:35 PM: Retrieved all activities successfully. Count: 1.
+3/19/2024 12:17:39 AM: Retrieving all activities.
+3/19/2024 12:17:39 AM: Retrieved all activities successfully. Count: 0.
+3/19/2024 12:18:14 AM: Retrieving all activities.
+3/19/2024 12:18:14 AM: Retrieved all activities successfully. Count: 0.
+3/19/2024 12:18:47 AM: Creating a new activity.
+3/19/2024 12:18:48 AM: Activity created successfully with ID: 1.
+3/19/2024 12:18:51 AM: Retrieving all activities.
+3/19/2024 12:18:51 AM: Retrieved all activities successfully. Count: 1.
+3/19/2024 12:24:25 AM: Retrieving all activities.
+3/19/2024 12:24:25 AM: Retrieved all activities successfully. Count: 1.
+3/19/2024 12:26:26 AM: Retrieving all activities.
+3/19/2024 12:26:26 AM: Retrieved all activities successfully. Count: 1.
+3/19/2024 12:26:49 AM: Retrieving all activities.
+3/19/2024 12:26:49 AM: Retrieved all activities successfully. Count: 1.
+3/19/2024 12:27:08 AM: Retrieving all activities.
+3/19/2024 12:27:08 AM: Retrieved all activities successfully. Count: 1.
+3/19/2024 12:27:15 AM: Retrieving all activities.
+3/19/2024 12:27:15 AM: Retrieved all activities successfully. Count: 1.
+3/19/2024 12:27:39 AM: Retrieving all activities.
+3/19/2024 12:27:39 AM: Retrieved all activities successfully. Count: 1.
+3/19/2024 12:27:43 AM: Retrieving all activities.
+3/19/2024 12:27:43 AM: Retrieved all activities successfully. Count: 1.
+3/19/2024 12:33:33 AM: Deleting activity with ID: 1.
+3/19/2024 12:33:36 AM: Activity deleted successfully with ID: 1.
+3/19/2024 12:33:42 AM: Creating a new activity.
+3/19/2024 12:33:42 AM: Activity created successfully with ID: 2.
+3/19/2024 12:33:52 AM: Retrieving all activities.
+3/19/2024 12:33:53 AM: Retrieved all activities successfully. Count: 1.
+3/19/2024 12:35:35 AM: Retrieving all activities.
+3/19/2024 12:35:36 AM: Retrieved all activities successfully. Count: 1.
+3/19/2024 1:08:05 AM: Retrieving all activities.
+3/19/2024 1:08:08 AM: Retrieved all activities successfully. Count: 1.
+3/19/2024 1:12:18 AM: Retrieving all activities.
+3/19/2024 1:12:18 AM: Retrieved all activities successfully. Count: 1.
+19.03.2024 12:39:59: Retrieving all activities.
+19.03.2024 12:39:59: Retrieved all activities successfully. Count: 1.
+19.03.2024 12:40:24: Retrieving all activities.
+19.03.2024 12:40:24: Retrieved all activities successfully. Count: 1.

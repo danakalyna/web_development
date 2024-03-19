@@ -1,0 +1,20 @@
+<div class="login-container">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" formControlName="username" id="username" class="form-control">
+        <div *ngIf="loginForm.get('username')?.errors" class="alert alert-danger">
+          <!-- Display validation error for username -->
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" formControlName="password" id="password" class="form-control">
+        <div *ngIf="loginForm.get('password')?.errors" class="alert alert-danger">
+          <!-- Display validation error for password -->
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
+    </form>
+  </div>
+  

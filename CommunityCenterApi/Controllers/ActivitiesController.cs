@@ -73,5 +73,13 @@ namespace CommunityCenterApi.Controllers
 
             return NoContent();
         }
+
+        [HttpGet("GetAllActivitiesOrderedByDate")]
+        public async Task<ActionResult<IEnumerable<Activity>>> GetAllActivitiesOrderedByDate()
+        {
+            var activities = await _activityService.GetAllActivitiesAsync();
+            var orderedActivities = activities.OrderBy(a => a.Date).ToList();
+            return Ok(orderedActivities);
+        }
     }
 }

@@ -1,0 +1,11 @@
+<div class="activity-list">
+    <h2>Activity List</h2>
+    <ul>
+      <li *ngFor="let activity of activities">
+        <h3>{{ activity.activityName }}</h3>
+        <p>{{ activity.description }}</p>
+        <small>Date: {{ activity.date | date }}</small>
+      </li>
+    </ul>
+  </div>
+  

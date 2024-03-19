@@ -9,5 +9,6 @@ namespace CommunityCenterApi.Services.Interfaces
         Task<User> GetUserByIdAsync(Guid userId);
         Task<User> UpdateUserAsync(Guid userId, User updatedUser);
         Task<bool> DeleteUserAsync(Guid userId);
+        Task<User> Authenticate(string username, string password);
     }
 }

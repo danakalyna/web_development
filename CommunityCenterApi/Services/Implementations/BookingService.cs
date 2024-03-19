@@ -49,7 +49,6 @@ namespace CommunityCenterApi.Services.Implementations
             }
 
             // Update properties
-            existingBooking.Date = updatedBooking.Date;
             existingBooking.Status = updatedBooking.Status;
             existingBooking.UserId = updatedBooking.UserId;
             existingBooking.ActivityId = updatedBooking.ActivityId;

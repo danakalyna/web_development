@@ -109,6 +109,42 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "CommunityCenterApi.Controllers.ActivitiesController",
+    "Method": "GetAllActivitiesOrderedByDate",
+    "RelativePath": "api/Activities/GetAllActivitiesOrderedByDate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CommunityCenterApi.Models.Activity, CommunityCenterApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CommunityCenterApi.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "CommunityCenterApi.Models.UserLoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "CommunityCenterApi.Controllers.BookingsController",
     "Method": "CreateBooking",
     "RelativePath": "api/Bookings",
