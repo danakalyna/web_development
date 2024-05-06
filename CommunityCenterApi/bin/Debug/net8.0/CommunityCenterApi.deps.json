@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "CommunityCenterApi/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.TestHost": "8.0.4",
           "Microsoft.EntityFrameworkCore": "8.0.2",
           "Microsoft.EntityFrameworkCore.Design": "8.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.2",
@@ -16,7 +17,8 @@
           "Serilog.Sinks.File": "5.0.0",
           "Swashbuckle.AspNetCore.Swagger": "6.5.0",
           "Swashbuckle.AspNetCore.SwaggerGen": "6.5.0",
-          "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0"
+          "Swashbuckle.AspNetCore.SwaggerUI": "6.5.0",
+          "coverlet.msbuild": "6.0.2"
         },
         "runtime": {
           "CommunityCenterApi.dll": {}
@@ -56,11 +58,23 @@
           }
         }
       },
+      "coverlet.msbuild/6.0.2": {},
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.TestHost/8.0.4": {
+        "dependencies": {
+          "System.IO.Pipelines": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.TestHost.dll": {
+            "assemblyVersion": "8.0.4.0",
+            "fileVersion": "8.0.424.17014"
           }
         }
       },
@@ -242,7 +256,7 @@
           "Microsoft.Bcl.AsyncInterfaces": "6.0.0",
           "Microsoft.CodeAnalysis.Common": "4.5.0",
           "System.Composition": "6.0.0",
-          "System.IO.Pipelines": "6.0.3",
+          "System.IO.Pipelines": "8.0.0",
           "System.Threading.Channels": "6.0.0"
         },
         "runtime": {
@@ -921,7 +935,7 @@
           "System.Security.Principal.Windows": "5.0.0"
         }
       },
-      "System.IO.Pipelines/6.0.3": {},
+      "System.IO.Pipelines/8.0.0": {},
       "System.Memory/4.5.4": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
@@ -1063,12 +1077,26 @@
       "path": "azure.identity/1.10.3",
       "hashPath": "azure.identity.1.10.3.nupkg.sha512"
     },
+    "coverlet.msbuild/6.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8b4jBNH7mcQy1otyQErjjIUuGD74XxKZ1wvDufbY7jhWwckl7wIa+icjwdPYeI0aYMS4Tp63LIZvyMFjWwOMDw==",
+      "path": "coverlet.msbuild/6.0.2",
+      "hashPath": "coverlet.msbuild.6.0.2.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.TestHost/8.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NQ5kHSo0aazGFbZ/3J2Fr/uKtOd43H3vJLoXoMY9GXUQppbfXco3zrYF9uBB7zkLsuFh9McBln1izgycYGscUA==",
+      "path": "microsoft.aspnetcore.testhost/8.0.4",
+      "hashPath": "microsoft.aspnetcore.testhost.8.0.4.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
       "type": "package",
@@ -1560,12 +1588,12 @@
       "path": "system.io.filesystem.accesscontrol/5.0.0",
       "hashPath": "system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512"
     },
-    "System.IO.Pipelines/6.0.3": {
+    "System.IO.Pipelines/8.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
-      "path": "system.io.pipelines/6.0.3",
-      "hashPath": "system.io.pipelines.6.0.3.nupkg.sha512"
+      "sha512": "sha512-FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
+      "path": "system.io.pipelines/8.0.0",
+      "hashPath": "system.io.pipelines.8.0.0.nupkg.sha512"
     },
     "System.Memory/4.5.4": {
       "type": "package",

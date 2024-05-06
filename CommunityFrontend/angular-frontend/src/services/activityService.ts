@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
 import { Activity } from '../models/activity.model';
 import { environment } from '../environments/environment';
+import { AuthService } from './authService';
 
 @Injectable({
   providedIn: 'root'
@@ -10,16 +11,25 @@ import { environment } from '../environments/environment';
 export class ActivityService {
   private apiUrl = `${environment.apiUrl}api/activities`;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private authService: AuthService) {}
 
   // Get a single activity by its ID
   getActivityById(id: number): Observable<Activity> {
     return this.http.get<Activity>(`${this.apiUrl}/${id}`);
   }
-
-  // Create a new activity
-  createActivity(activity: Activity): Observable<Activity> {
-    return this.http.post<Activity>(this.apiUrl, activity);
+  convertDate(dateString: string) {
+    
+    const datetime = new Date(`${dateString}`);
+    return datetime.toISOString(); // Converts to a string in simplified extended ISO format (ISO 8601)
+  }
+  // Create a new activity activityName, description, date
+  createActivity(activityName: string, description: string, date: string, userId: string): Observable<Activity> {
+    return this.http.post<Activity>(this.apiUrl, {
+      activityName,
+      description,
+      date: this.convertDate(date),
+      userId
+    });
   }
 
   // Update an existing activity
@@ -33,7 +43,7 @@ export class ActivityService {
   }  
   
   getActivities(): Observable<Activity[]> {
-    return this.http.get<{ $values: Activity[] }>(this.apiUrl).pipe(
+    return this.http.get<{ $values: Activity[] }>(this.apiUrl+"/GetAllActivitiesOrderedByDate/" + this.authService.currentUserId).pipe(
       map(response => response.$values) // Assuming that the activities are wrapped in an object with a `$values` key
     );
   }

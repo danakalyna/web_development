@@ -46,6 +46,13 @@
           }
         }
       },
+      "coverlet.msbuild/6.0.2": {
+        "type": "package",
+        "build": {
+          "build/coverlet.msbuild.props": {},
+          "build/coverlet.msbuild.targets": {}
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -58,6 +65,25 @@
             "related": ".xml"
           }
         }
+      },
+      "Microsoft.AspNetCore.TestHost/8.0.4": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Pipelines": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.AspNetCore.TestHost.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.AspNetCore.TestHost.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
@@ -1452,20 +1478,20 @@
           }
         }
       },
-      "System.IO.Pipelines/6.0.3": {
+      "System.IO.Pipelines/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.IO.Pipelines.dll": {
+          "lib/net8.0/System.IO.Pipelines.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Memory/4.5.4": {
@@ -1855,6 +1881,47 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
+    "coverlet.msbuild/6.0.2": {
+      "sha512": "8b4jBNH7mcQy1otyQErjjIUuGD74XxKZ1wvDufbY7jhWwckl7wIa+icjwdPYeI0aYMS4Tp63LIZvyMFjWwOMDw==",
+      "type": "package",
+      "path": "coverlet.msbuild/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "MSBuildIntegration.md",
+        "build/coverlet.msbuild.props",
+        "build/coverlet.msbuild.targets",
+        "coverlet-icon.png",
+        "coverlet.msbuild.6.0.2.nupkg.sha512",
+        "coverlet.msbuild.nuspec",
+        "tasks/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tasks/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "tasks/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "tasks/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
+        "tasks/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "tasks/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "tasks/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "tasks/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "tasks/netstandard2.0/Mono.Cecil.dll",
+        "tasks/netstandard2.0/Newtonsoft.Json.dll",
+        "tasks/netstandard2.0/NuGet.Versioning.dll",
+        "tasks/netstandard2.0/System.Buffers.dll",
+        "tasks/netstandard2.0/System.Collections.Immutable.dll",
+        "tasks/netstandard2.0/System.Memory.dll",
+        "tasks/netstandard2.0/System.Numerics.Vectors.dll",
+        "tasks/netstandard2.0/System.Reflection.Metadata.dll",
+        "tasks/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "tasks/netstandard2.0/System.Text.Encodings.Web.dll",
+        "tasks/netstandard2.0/System.Text.Json.dll",
+        "tasks/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "tasks/netstandard2.0/coverlet.core.dll",
+        "tasks/netstandard2.0/coverlet.core.pdb",
+        "tasks/netstandard2.0/coverlet.core.xml",
+        "tasks/netstandard2.0/coverlet.msbuild.tasks.deps.json",
+        "tasks/netstandard2.0/coverlet.msbuild.tasks.dll",
+        "tasks/netstandard2.0/coverlet.msbuild.tasks.pdb"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -1871,6 +1938,21 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.TestHost/8.0.4": {
+      "sha512": "NQ5kHSo0aazGFbZ/3J2Fr/uKtOd43H3vJLoXoMY9GXUQppbfXco3zrYF9uBB7zkLsuFh9McBln1izgycYGscUA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.testhost/8.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net8.0/Microsoft.AspNetCore.TestHost.dll",
+        "lib/net8.0/Microsoft.AspNetCore.TestHost.xml",
+        "microsoft.aspnetcore.testhost.8.0.4.nupkg.sha512",
+        "microsoft.aspnetcore.testhost.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
@@ -4011,27 +4093,31 @@
         "version.txt"
       ]
     },
-    "System.IO.Pipelines/6.0.3": {
-      "sha512": "ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
+    "System.IO.Pipelines/8.0.0": {
+      "sha512": "FHNOatmUq0sqJOkTx+UF/9YK1f180cnW5FVqnQMvYUN0elp6wFzbtPSiqbo1/ru8ICp43JM1i7kKkk6GsNGHlA==",
       "type": "package",
-      "path": "system.io.pipelines/6.0.3",
+      "path": "system.io.pipelines/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.IO.Pipelines.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.IO.Pipelines.dll",
-        "lib/net461/System.IO.Pipelines.xml",
+        "lib/net462/System.IO.Pipelines.dll",
+        "lib/net462/System.IO.Pipelines.xml",
         "lib/net6.0/System.IO.Pipelines.dll",
         "lib/net6.0/System.IO.Pipelines.xml",
-        "lib/netcoreapp3.1/System.IO.Pipelines.dll",
-        "lib/netcoreapp3.1/System.IO.Pipelines.xml",
+        "lib/net7.0/System.IO.Pipelines.dll",
+        "lib/net7.0/System.IO.Pipelines.xml",
+        "lib/net8.0/System.IO.Pipelines.dll",
+        "lib/net8.0/System.IO.Pipelines.xml",
         "lib/netstandard2.0/System.IO.Pipelines.dll",
         "lib/netstandard2.0/System.IO.Pipelines.xml",
-        "system.io.pipelines.6.0.3.nupkg.sha512",
+        "system.io.pipelines.8.0.0.nupkg.sha512",
         "system.io.pipelines.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -4834,6 +4920,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Microsoft.AspNetCore.TestHost >= 8.0.4",
       "Microsoft.EntityFrameworkCore >= 8.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.2",
@@ -4842,23 +4929,29 @@
       "Serilog.Sinks.File >= 5.0.0",
       "Swashbuckle.AspNetCore.Swagger >= 6.5.0",
       "Swashbuckle.AspNetCore.SwaggerGen >= 6.5.0",
-      "Swashbuckle.AspNetCore.SwaggerUI >= 6.5.0"
+      "Swashbuckle.AspNetCore.SwaggerUI >= 6.5.0",
+      "coverlet.msbuild >= 6.0.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dana\\.nuget\\packages\\": {}
+    "D:\\Users\\alex.moskalenko\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\CommunityCenterApi.csproj",
+      "projectUniqueName": "D:\\univ\\CommunityCenterApi\\CommunityCenterApi\\CommunityCenterApi.csproj",
       "projectName": "CommunityCenterApi",
-      "projectPath": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\CommunityCenterApi.csproj",
-      "packagesPath": "C:\\Users\\Dana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dana\\Documents\\GitHub\\web_development\\CommunityCenterApi\\obj\\",
+      "projectPath": "D:\\univ\\CommunityCenterApi\\CommunityCenterApi\\CommunityCenterApi.csproj",
+      "packagesPath": "D:\\Users\\alex.moskalenko\\.nuget\\packages\\",
+      "outputPath": "D:\\univ\\CommunityCenterApi\\CommunityCenterApi\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Dana\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "D:\\Users\\alex.moskalenko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4866,6 +4959,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4889,6 +4983,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Microsoft.AspNetCore.TestHost": {
+            "target": "Package",
+            "version": "[8.0.4, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.2, )"
@@ -4926,6 +5024,12 @@
           "Swashbuckle.AspNetCore.SwaggerUI": {
             "target": "Package",
             "version": "[6.5.0, )"
+          },
+          "coverlet.msbuild": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[6.0.2, )"
           }
         },
         "imports": [

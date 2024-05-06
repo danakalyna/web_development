@@ -38,12 +38,13 @@
           font-size: 14px;
         }
       }
-  
       .btn {
+        margin-top: 10px; /* Adds space above each button */
         padding: 10px 15px;
         font-size: 18px;
         border-radius: 4px;
         cursor: pointer;
+      
         &.btn-primary {
           background-color: #007bff;
           border-color: #007bff;
@@ -53,6 +54,17 @@
             border-color: #0062cc;
           }
         }
+      
+        &.btn-secondary {
+          background-color: #6c757d;
+          border-color: #6c757d;
+          color: white;
+          &:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+          }
+        }
+      
         &:disabled {
           background-color: #e0e0e0;
           border-color: #ddd;

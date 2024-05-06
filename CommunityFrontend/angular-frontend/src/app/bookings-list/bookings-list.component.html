@@ -1,0 +1,12 @@
+<div class="booking-list">
+    <h2>Booking List</h2>
+    <ul *ngIf="bookings.length > 0; else noBookings">
+      <li *ngFor="let booking of bookings">
+        <p><strong>{{ booking.activity.activityName }}</strong> - Booked on: {{ booking.activity.date | date:'mediumDate' }}</p>
+      </li>
+    </ul>
+    <ng-template #noBookings>
+      <p>No bookings found.</p>
+    </ng-template>
+  </div>
+  

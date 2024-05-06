@@ -9,10 +9,12 @@ namespace CommunityCenterApi.Controllers
     public class ActivitiesController : ControllerBase
     {
         private readonly IActivityService _activityService;
+        private readonly IBookingService bookingService;
 
-        public ActivitiesController(IActivityService activityService)
+        public ActivitiesController(IActivityService activityService, IBookingService bookingService)
         {
             _activityService = activityService;
+            this.bookingService = bookingService;
         }
 
         [HttpPost]
@@ -74,12 +76,28 @@ namespace CommunityCenterApi.Controllers
             return NoContent();
         }
 
-        [HttpGet("GetAllActivitiesOrderedByDate")]
-        public async Task<ActionResult<IEnumerable<Activity>>> GetAllActivitiesOrderedByDate()
+        [HttpGet("GetAllActivitiesOrderedByDate/{userId}")]
+        public async Task<ActionResult<IEnumerable<ActivityModel>>> GetAllActivitiesOrderedByDate(Guid userId)
         {
             var activities = await _activityService.GetAllActivitiesAsync();
             var orderedActivities = activities.OrderBy(a => a.Date).ToList();
-            return Ok(orderedActivities);
+
+            var models = orderedActivities.Select(a => new ActivityModel
+            {
+                // Assuming ActivityModel inherits from Activity and you want to copy all properties
+                ActivityId = a.ActivityId,
+                ActivityName = a.ActivityName,
+                Date = a.Date,
+                Description = a.Description,
+                Bookings = a.Bookings,
+                IsBooked = a.Bookings == null ? false : a.Bookings.Any(b => b.UserId == userId) // Set IsBooked here
+            }).ToList();
+
+            return Ok(models);
         }
+    }
+    public class ActivityModel : Activity
+    {
+        public bool IsBooked {  get; set; }
     }
 }

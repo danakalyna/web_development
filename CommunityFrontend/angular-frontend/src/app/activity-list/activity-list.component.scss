@@ -1,35 +1,160 @@
 .activity-list {
-    ul {
-      list-style-type: none;
-      padding: 0;
-  
-      li {
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
-  
-        &:last-child {
-          border-bottom: none;
-        }
-      }
-    }
-  
-    h2 {
-      color: #333;
-    }
-  
-    h3 {
-      margin: 0;
-      color: #007bff;
-    }
-  
-    p {
-      margin: 5px 0;
-    }
-  
-    small {
-      display: block;
-      margin-top: 10px;
-      color: #666;
+  padding: 0 15px; /* Add padding around the list for better spacing */
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Ensure there's no default margin */
+  }
+
+  li {
+    padding: 10px 0; /* Top and bottom padding for list items */
+    border-bottom: 1px solid #ccc;
+    &:last-child {
+      border-bottom: none;
     }
   }
-  
+
+  .header {
+    display: flex;
+    justify-content: space-between; /* Aligns children (title and search box) on opposite ends */
+    align-items: center; /* Vertical alignment */
+    padding: 10px 0; /* Padding for better spacing */
+  }
+
+  .page-title {
+    margin: 0; /* Remove margin to handle spacing with padding */
+    color: #333;
+    flex-grow: 1; /* Allows title to occupy maximum available space */
+  }
+
+  .search-box {
+    position: relative;
+    width: 300px; /* Maintain a fixed width for the search box */
+  }
+
+  .search-input {
+    width: 85%;
+    padding: 8px 40px 8px 10px; /* Right padding accounts for the icon */
+    border-radius: 20px; /* Rounded corners */
+    border: 1px solid #ccc;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .search-input:focus {
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.8); /* Subtle glow effect */
+    border-color: #007bff;
+  }
+
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+    cursor: pointer;
+  }
+
+  .search-icon:hover,
+  .search-input:focus + .search-icon {
+    color: #007bff;
+    animation: rotateIcon 0.5s ease-in-out;
+  }
+
+  @keyframes rotateIcon {
+    from {
+      transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+      transform: translateY(-50%) rotate(360deg);
+    }
+  }
+
+  li > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* Add padding to ensure spacing inside each list item */
+  }
+
+  h3 {
+    margin: 0;
+    color: #007bff;
+  }
+
+  p, small {
+    margin: 5px 0;
+    color: #666;
+  }
+
+  .btn-primary {
+    border-radius: 50rem; 
+    background-color: #007bff; /* Bootstrap primary blue */
+    border-color: #007bff; /* Border color if needed */
+    color: white;
+    padding: 5px 15px; /* Increased padding for a better button shape */
+    &.btn-success {
+      background-color: green; // Color for available activities
+    }
+
+    &.btn-secondary {
+      background-color: gray; // Color for already booked activities
+      cursor: not-allowed;
+    }
+  }
+  .pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    button {
+      padding: 5px 15px;
+      margin: 0 10px;
+      background-color: #007bff;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($color: #007bff, $amount: 10%);
+      }
+
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+        color: #666;
+      }
+    }
+
+    span {
+      font-size: 16px;
+      color: #333;
+    }
+  }
+
+  .spinner-border {
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+.spinner-border {
+  display: inline-block; // Ensures the spinner is not set to display:none
+  width: 3rem;
+  height: 3rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor; // Use your theme's primary color or specific
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spinner-border .75s linear infinite;
+}
+
+@keyframes spinner-border {
+  100% {
+      transform: rotate(360deg);
+  }
+}

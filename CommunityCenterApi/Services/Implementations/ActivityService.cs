@@ -28,7 +28,8 @@ namespace CommunityCenterApi.Services.Implementations
 
         public async Task<IEnumerable<Activity>> GetAllActivitiesAsync()
         {
-            return await _context.Activities.ToListAsync();
+            return await _context.Activities
+                         .Include(a => a.Bookings).ToListAsync();
         }
 
         public async Task<Activity> GetActivityByIdAsync(int activityId)

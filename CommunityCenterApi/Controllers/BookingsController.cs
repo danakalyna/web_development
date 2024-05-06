@@ -94,5 +94,57 @@ namespace CommunityCenterApi.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError, "An error occurred while calculating the price.");
             }
         }
+
+        [HttpGet("user/{userId}")]
+        public async Task<ActionResult<IEnumerable<BookingDto>>> GetBookingByUserId(Guid userId)
+        {
+            var bookings = await _bookingService.GetAllBookingsAsync();
+            if (bookings == null)
+            {
+                return NotFound("No bookings found.");
+            }
+
+            var userBookings = bookings
+                .Where(b => b.UserId == userId)
+                .Select(b => new BookingDto
+                {
+                    BookingId = b.BookingId,
+                    Status = b.Status,
+                    Price = b.Price,
+                    UserId = b.UserId.ToString(),
+                    Activity = new ActivityDto()
+                    {
+                        ActivityId = b.ActivityId,
+                        ActivityName = b.Activity.ActivityName,
+                        Description = b.Activity.Description,
+                        Date = b.Activity.Date
+                    },
+                    //ActivityName = b.Activity.ActivityName  // Assume Activity is eager loaded
+                })
+                .ToList();
+
+            if (!userBookings.Any())
+            {
+                return NotFound($"No bookings found for user ID {userId}.");
+            }
+
+            return Ok(userBookings);
+        }
+    }
+    public class BookingDto
+    {
+        public int BookingId { get; set; }
+        public string Status { get; set; }
+        public double Price { get; set; }
+        public string UserId { get; set; }
+        public ActivityDto Activity { get; set; }
+    }
+
+    public class ActivityDto
+    {
+        public int ActivityId { get; set; }
+        public string ActivityName { get; set; }
+        public string Description { get; set; }
+        public DateTime Date { get; set; }
     }
 }

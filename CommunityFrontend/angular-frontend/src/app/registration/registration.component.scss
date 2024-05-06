@@ -1,0 +1,59 @@
+/* Style for the overall container */
+.registration-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Styling form groups for better spacing */
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  /* Style adjustments for input fields */
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Styling checkboxes differently */
+  input[type="checkbox"] {
+    margin-top: 3px;
+  }
+  
+  /* Label styling for better readability */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Button styling for a more attractive appearance */
+  button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

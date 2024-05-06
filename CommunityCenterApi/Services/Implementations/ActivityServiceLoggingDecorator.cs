@@ -29,7 +29,7 @@ namespace CommunityCenterApi.Services.Implementations
                 }
                 catch (Exception ex)
                 {
-                    logger.WriteTextToFile($"Error creating activity {ex}");
+                    logger.WriteTextToFile($"Error creating activity {ex.Message}");
                     throw;
                 }
             }
